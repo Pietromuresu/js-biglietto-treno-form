@@ -19,28 +19,32 @@
 
     <div class="pm-form container justify-content-center debug">
 
-      <div class="d-flex mb-3">
-        <div class="w-50 text-center">
+      <div class="d-flex mb-3 row">
+        <div class="col-4 text-center">
           <p >Nome e Cognome</p> <br>
-        <input id="name" class="w-100" type="text" placeholder="Inserisci Nome e Cognome">
+        <input id="name" class="w-100" value="" type="text" placeholder="Inserisci Nome e Cognome">
         </div>
   
-        <div class=" ms-4 w-50 d-inline-block text-center">
+        <div class="col-4 ms-4  d-inline-block text-center">
           <p >Quanti km vuoi fare?</p> <br>
-        <input class="kmdapercorrere" type="text" placeholder="Quanti chilometri(km) vuoi fare?">
+        <input id="kmToDo" value="" type="number" placeholder="Quanti chilometri(km) vuoi fare?">
         </div>
 
-        <div class="ms-4 d-flex align-items-center">
-          <select name="" id="majority">
-            <option value="minorenne"> Minorenne</option>
-            <option value="maggiorenne"> Maggiorenne</option>
-            <option value="over-65"> Over-65</option>
+        <div class="col-3 ms-4  text-center">
+          <label for="majority">
+            quale è la tua seniority?
+          </label>
+          <select name="majority" id="majority" >
+            <option> ---- </option>
+            <option value="1"> Minorenne</option>
+            <option value="Minorenne"> Maggiorenne</option>
+            <option value="2"> Over-65</option>
           </select>
         </div>
       </div>
 
       <div class="w-100 text-center debug">
-        <button>
+        <button id="generate">
           Genera biglietto
         </button>
         <button>
@@ -67,11 +71,11 @@
             <div class="row mt-4 h-25 ">
               <div class="col pm-user  ">
                 <h3 class="d-block">Name of Passenger:</h3>
-                <h1 class="ms-3">Mario Rossi</h1>
+                <h1 id="output" class="ms-3"></h1>
               </div>
               <div class="col  ">
                 <h4>Km To Do:  </h4>
-                <h1 class="ms-3" id="kmToDo"></h1>
+                <h1 class="ms-3" id="outputKmToDo"></h1>
   
               </div>
             </div>
