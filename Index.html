@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+  <title>Biglietto Treno Form </title>
+</head>
+<body>
+  
+  <div class="pm-container  ">
+
+    <div class="pm-form container justify-content-center debug">
+
+      <div class="d-flex mb-3">
+        <div class="w-50 text-center">
+          <p >Nome e Cognome</p> <br>
+        <input id="name" class="w-100" type="text" placeholder="Inserisci Nome e Cognome">
+        </div>
+  
+        <div class=" ms-4 w-50 d-inline-block text-center">
+          <p >Quanti km vuoi fare?</p> <br>
+        <input class="kmdapercorrere" type="text" placeholder="Quanti chilometri(km) vuoi fare?">
+        </div>
+
+        <div class="ms-4 d-flex align-items-center">
+          <select name="" id="majority">
+            <option value="minorenne"> Minorenne</option>
+            <option value="maggiorenne"> Maggiorenne</option>
+            <option value="over-65"> Over-65</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="w-100 text-center debug">
+        <button>
+          Genera biglietto
+        </button>
+        <button>
+          Annulla
+        </button>
+      </div>
+    </div>
+
+
+    <div class="ticket-container ">
+    
+      <div class="pm-ticket container ">
+        <div class="pm-header-ticket d-flex  justify-content-between ">
+          <div class="pm-logo ">
+            <img src="Assets/img/logo-trenitalia-removebg-preview.png" class="pm-logo">
+          </div>
+          <span class="fs-5 fw-bold">         
+            T4 54382935643
+          </span>
+        </div>
+  
+        <div class="row h-100 ">
+          <div class="col-md-8 order-1 order-md-0 text-center text-md-start">
+            <div class="row mt-4 h-25 ">
+              <div class="col pm-user  ">
+                <h3 class="d-block">Name of Passenger:</h3>
+                <h1 class="ms-3">Mario Rossi</h1>
+              </div>
+              <div class="col  ">
+                <h4>Km To Do:  </h4>
+                <h1 class="ms-3" id="kmToDo"></h1>
+  
+              </div>
+            </div>
+            <div class="row mt-4 h-25 ">
+              <div class="col ">
+                <div>
+                  <h4>Platform:</h4>
+                  <h2 class="ms-3">3</h2>
+                </div>
+                <div>
+                  <h4>Seat:</h4>
+                  <h2 class="ms-3">18 <span class="text-primary">B</span></h2>
+                </div>
+              </div>
+              <div class="col ">
+                <h4>Price:</h4>
+                <h2 class="ms-3" id="totalPrice"></h2>
+              </div>
+            </div>
+          </div>      
+          <div class="col-md-4 text-center mt-3  pm-qr-code   ">
+            <a class="mt-2" href="https://www.youtube.com/watch?v=3rDjPLvOShM">
+              <img src="Assets/img/qr-code.png" class=""  > 
+            </a>
+            <h1>scan me</h1>   
+          </div>   
+          
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+
+  <script src="Assets/scripts.js"></script>
+</body>
+</html>
