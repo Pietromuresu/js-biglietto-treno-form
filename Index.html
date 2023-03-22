@@ -17,7 +17,7 @@
   
   <div class="pm-container  ">
 
-    <div class="pm-form container justify-content-center debug">
+    <div class="pm-form container justify-content-center mt-5 ">
 
       <div class="d-flex mb-3 row">
         <div class="col-4 text-center">
@@ -34,7 +34,7 @@
           <label for="majority">
             quale è la tua seniority?
           </label>
-          <select name="majority" id="majority" >
+          <select name="majority" id="majority" class="mt-5" >
             <option> ---- </option>
             <option value="minorenne"> Minorenne</option>
             <option value="maggiorenne"> Maggiorenne</option>
@@ -43,26 +43,26 @@
         </div>
       </div>
 
-      <div class="w-100 text-center debug">
-        <button id="generate">
+      <div class="w-100 text-center ">
+        <button id="generate" class="btn btn-primary">
           Genera biglietto
         </button>
-        <button id="annulla">
+        <button id="annulla" class="btn btn-primary">
           Annulla
         </button>
       </div>
     </div>
 
 
-    <div class="ticket-container ">
+    <div id="ticket-container" class="ticket-container d-none ">
     
       <div class="pm-ticket container ">
         <div class="pm-header-ticket d-flex  justify-content-between ">
           <div class="pm-logo ">
             <img src="Assets/img/logo-trenitalia-removebg-preview.png" class="pm-logo">
           </div>
-          <span class="fs-5 fw-bold">         
-            T4 54382935643
+          <span id="numTicket" class="fs-5 fw-bold">         
+            T4 
           </span>
         </div>
   
@@ -83,11 +83,11 @@
               <div class="col ">
                 <div>
                   <h4>Platform:</h4>
-                  <h2 class="ms-3">3</h2>
+                  <h2 id="outputPlatform" class="ms-3"></h2>
                 </div>
                 <div>
                   <h4>Seat:</h4>
-                  <h2 class="ms-3">18 <span class="text-primary">B</span></h2>
+                  <h2 id="outputSeat" class="ms-3"> </h2>
                 </div>
               </div>
               <div class="col ">

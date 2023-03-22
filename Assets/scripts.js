@@ -4,9 +4,15 @@ const input2 = document.getElementById('kmToDo')
   console.log(name); 
 generate.addEventListener('click', function() {
 
+ const ticketContainer = document.getElementById('ticket-container');
+ ticketContainer.classList.remove('d-none');
 
-  
 
+  const platform = Math.floor(Math.random() * 20);
+  console.log(platform);
+ 
+ const seat  = Math.floor(Math.random() * 120);
+  const numTicket = Math.floor(Math.random() * 53442232);
 
 const priceForKm = 0.21 ; 
 const fasciaEta = select.value;
@@ -33,11 +39,13 @@ let offerta = 'Prezzo Standard',
   prezzo = (km * priceForKm) * (1 - sconto/100);
  console.log( prezzo);
 
-document.getElementById('output').innerHTML = naming;
+ document.getElementById('output').innerHTML = naming;
  document.getElementById('outputKmToDo').innerHTML = km;
  document.getElementById('totalPrice').innerHTML = prezzo.toFixed(2);
  document.getElementById('offer').innerHTML = offerta;
- 
+ document.getElementById('outputPlatform').innerHTML = platform;
+ document.getElementById('outputSeat').innerHTML = seat + 'B';
+ document.getElementById('numTicket').innerHTML = 'T4' + numTicket;
 
 });
 
@@ -48,8 +56,12 @@ annulla.addEventListener('click', function() {
 name.value = '';
 kmToDo.value = '';
 majority.value = '----'
+const ticketContainer = document.getElementById('ticket-container');
+ticketContainer.classList.add('d-none');
 
 })
+
+
 
 
 
@@ -61,7 +73,7 @@ majority.value = '----'
   
 
   
-//  select element
+
 
 
 
