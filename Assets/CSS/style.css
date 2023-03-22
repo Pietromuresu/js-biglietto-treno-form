@@ -4,11 +4,14 @@
   background-color: rgba(137, 43, 226, 0.358);
   border: 1px solid black;
 }
+.pm-form {
+  background-color: #f4f6e7 ;
+}
 
 .ticket-container {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
 }
 
 .pm-ticket {
